@@ -9,7 +9,7 @@ Simon Chiu
 
 ## Overview
 
-Image processing uses computer algorithms to enhance an image or to extract useful information from it. In this package, we have implemented some Python/R functions for image processing. These functions perform Gaussian blurring, Laplacian edge detection, and color changing.
+Image processing uses computer algorithms to enhance an image or to extract useful information from it. In this package, we have implemented some Python functions for image processing. These functions perform Gaussian blurring, Laplacian edge detection, and color changing.
 
 ## Functions
 
@@ -20,6 +20,6 @@ Image processing uses computer algorithms to enhance an image or to extract usef
 3. **RBG Manipulation**    
    This function adjusts the red, blue and green intensity of an image by applying different weights for each RBG channel. This is similar to a colour filter in Instagram.
 
-## R Ecosystem
+## Python Ecosystem
 
 [InstaPy](https://github.com/UBC-MDS/InstaPy) is a Python package that contains the three functions: blur, flip and greyscale to transform images. In this project, we plan to implement three more image processing functions in Python by exploring additional filters.
