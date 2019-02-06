@@ -2,10 +2,10 @@
 
 ## Contributors:
 
-Betty Zhou
-Linyang Yu
-Reza Bagheri
-Simon Chiu
+Betty Zhou     
+Linyang Yu    
+Reza Bagheri    
+Simon Chiu    
 
 ## Overview
 
