@@ -13,11 +13,11 @@ Image processing uses computer algorithms to enhance an image or to extract usef
 
 ## Functions
 
-1. **Gaussian Blur**
+1. **Gaussian Blur**    
    This function performs convolution to de-emphasize differences in adjacent pixel values with a Gaussian distribution. The blurring effect removes detail and noise in the input image.
-2. **Laplacian Edge Detecting**
+2. **Laplacian Edge Detecting**    
    This function performs convolution to emphasize differences in adjacent pixel values. The function detects edges by sharpening/highlighting the edges of an image.
-3. **RBG Manipulation**
+3. **RBG Manipulation**    
    This function adjusts the red, blue and green intensity of an image by applying different weights for each RBG channel. This is similar to a colour filter in Instagram.
 
 ## R Ecosystem
