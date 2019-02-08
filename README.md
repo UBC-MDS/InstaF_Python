@@ -28,11 +28,13 @@ Image processing uses computer algorithms to enhance an image or to extract usef
 
 ## Repo structure (will keep updating):
 
+
 InstaF_Python
-  |--[CONTRIBUTING.md](CONTRIBUTING.md)
-  |--[Code of CONDUCT.md](Code of CONDUCT.md)
-  |--[test_py](test_py)
-        |--[test_image](test_py/test_image)
-        |--[test_Gaussian_blurring.py](test_py/test_Gaussian_blurring.py)
-        |--[test_Laplacian_edge_detecting.py](test_py/test_Laplacian_edge_detecting.py)
-        |--[test_RGB_Manipulation.py](test_py/test_RGB_Manipulation.py)
+    ├── [CONTRIBUTING.md](CONTRIBUTING.md)
+    ├── [Code_of_CONDUCT.md](Code_of_CONDUCT.md)
+    ├── README.md
+    └── [test_py](test_py)
+        ├── [CONTRIBUTING.md](CONTRIBUTING.md)
+        ├── [Code_of_CONDUCT.md](Code_of_CONDUCT.md)
+        ├── README.md
+        └── [test_py](test_py)
