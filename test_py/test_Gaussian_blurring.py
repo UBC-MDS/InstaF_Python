@@ -7,10 +7,10 @@
 # input: image in .png format
 # output: a blured image in .png format
 
-import unittest
 import numpy as np
 import pandas as pd
 import os
+import pytest
 from skimage.color import rgb2gray
 from skimage.transform import resize
 from InstaF_Python import GaussianBlur
@@ -36,26 +36,21 @@ input_img_2 = preprocess_image("test_image/milad_gray.png")
 expected_output_2 = preprocess_image("test_image/milad_gray_gaussian.png")
 
 
-# the third part we want to test if the function can correctly recognize if an input is an image or not
-input_img_3 = "This is not a image but a string"
-expected_output_3 = "The input is not a image"
+# test normal picture with RBG channel
+def test_normal_pic_rbg(self):
+    assert np.arrat_equal(gaussian_blur(input_img_1, sigma = 1), expectied_output_1), "GaussianBlur not working on RBG image"
+
+# test normal picture with gray scale
+def test_normal_pic_gray_scale(self):
+    assert np.arrat_equal(gaussian_blur(input_img_2, sigma = 1), expectied_output_2), "GaussianBlur not working on grayscale image"
 
 
-# Define the test units
+# test non-image input
+def test_wrong_input_type():
+    with pytest.raises(AttributeError):
+        gaussian_blur("This is not an image", sigma = 1)
 
-class TestUM(unittest.TestCase):
-
-    def setup(self):
-        pass
-
-    # test normal picture with RBG channel
-    def test_normal_pic(self):
-        self.assertEqual(GaussianBlur(input_img_1, sigma = 1), expectied_output_1)
-
-    # test normal picture with gray scale
-    def test_normal_pic(self):
-        self.assertEqual(GaussianBlur(input_img_2, sigma = 1), expectied_output_2)
-
-    # test non-image input
-    def test_normal_pic(self):
-        self.assertEqual(GaussianBlur(input_img_3, sigma = 1), expectied_output_3)
+# test missing input arguments
+def test_input_path_not_exist():
+    with pytest.raises(FileNotFoundError):
+        laplacian_filter("./1234/123.png", sigma = 1)
