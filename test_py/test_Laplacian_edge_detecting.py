@@ -9,14 +9,14 @@ import skimage.io
 
 # test input: colour image
 test_img_laplacian_input = np.array([[[12, 79, 15],[171, 55, 63],[48, 90, 14]],
-                      [[36, 72, 80],[ 96, 144, 28],[215, 36, 40]],
-                      [[92, 32, 168],[144, 216, 209],[112, 54, 60]]], dtype = "uint8")
+                                    [[36, 72, 80],[ 96, 144, 28],[215, 36, 40]],
+                                    [[92, 32, 168],[144, 216, 209],[112, 54, 60]]], dtype = "uint8")
 
 skimage.io.imsave("test_py/test_image/test_img_laplacian_input.png", test_img_laplacian_input)
 # test output: Image with the Laplacian filter applied on it
 # filter is [[0,-1,	0],[-1,4,-1],[0,-1,	0]] and boundary is symm
 
-test_img_laplacian_ex_output = np.array([[[ 0,  155, 0],[255, 0,  105],[0,  153, 0]],
+test_img_laplacian_ex_output = np.array([[[0, 155, 0],[255, 0, 105],[0, 153, 0]],
                                          [[0, 0, 60], [0, 255, 0], [255, 0, 16]],
                                          [[8, 0, 95], [12, 255, 183], [26, 0, 0]]], dtype="uint8")
 
