@@ -8,8 +8,8 @@ import pytest
 import skimage.io
 
 # test input: colour image
-test_img_laplacian_input = np.array([[[12,	79,	15],[171, 55, 63],[48, 90, 14]],
-                      [[36,	72,	80],[ 96, 144, 28],[215, 36, 40]],
+test_img_laplacian_input = np.array([[[12, 79, 15],[171, 55, 63],[48, 90, 14]],
+                      [[36, 72, 80],[ 96, 144, 28],[215, 36, 40]],
                       [[92, 32, 168],[144, 216, 209],[112, 54, 60]]], dtype = "uint8")
 
 skimage.io.imsave("test_py/test_image/test_img_laplacian_input.png", test_img_laplacian_input)
