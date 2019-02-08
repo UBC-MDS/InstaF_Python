@@ -29,24 +29,21 @@ def test_laplacian():
     expected_output = skimage.io.imread("test_py/test_image/test_img_laplacian_exp_output.png")
     assert np.array_equal(output, expected_output), "Laplacian filter is not working properly"
 
-#Exception Handling
-def test_input_no_string():
+#Handling the exceptions with laplacian_filter()
+def test_bad_input():
     with pytest.raises(AttributeError):
         laplacian_filter(1234, "test_py/test_image/laplacian_output.png")
 
 def test_input_file_no_image():
     with pytest.raises(OSError):
-        laplacian_filter("test_py/test_image/test.txt.png", "test_py/test_image/laplacian_output.png")
+        laplacian_filter("test_py/test_image/test.txt", "test_py/test_image/laplacian_output.png")
 
 def test_input_path_not_exist():
     with pytest.raises(FileNotFoundError):
         laplacian_filter("./1234/123.png", "test_py/test_image/laplacian_output.png")
 
-def test_output_no_string():
+def test_bad_output():
     with pytest.raises(AttributeError):
         laplacian_filter("test_py/test_image/test_img_laplacian_input.png", 1234)
 
-def test_output_path_not_exist():
-    with pytest.raises(FileNotFoundError):
-        laplacian_filter("test_py/test_image/test_img_laplacian_input.png", "./1234/123.jpg")
 
