@@ -33,6 +33,10 @@ InstaF_Python
   * required file: [CONTRIBUTING.md](CONTRIBUTING.md)
   * required file: [Code_of_CONDUCT.md](Code_of_CONDUCT.md)
   * README.md
+  * InstaF_Python: folder contains all the Functions
+    * gaussian_blur.py (empty, with doc string)
+    * laplacian_edge_detecting.py (empty, with doc string)
+    * RGB_manipulation.py (empty, with doc string)
   * Testing Units Design: [test_py](test_py)
     * Contains images for testing: [test_image](test_py/test_image)
     * testing units for Gaussian Blurring: [test_Gaussian_blurring.py](test_py/test_Gaussian_blurring.py)
