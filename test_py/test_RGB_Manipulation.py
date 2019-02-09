@@ -1,7 +1,6 @@
 # Copyright 2018 Betty Zhou
 # This script contains tests for the RGB_manipulation function
 
-# for the original program waiting to be tested
 # input: image in .png format, weights for adjusting R,G,B
 # output: a RBG adjusted image in .png format
 
