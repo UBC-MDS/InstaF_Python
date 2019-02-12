@@ -27,25 +27,21 @@ def preprocess_image(filename):
 
 
 # the first part we want to test if our function is able to convert regular RBG channel image
-# we can then calculate the expected output image by matrix multiplication in python by hand for sigma = 1
-expected_output_1 = preprocess_image("test_image/carnovsky_RGB_1.png.png")
-
-
-# we can then calculate the expected output image by matrix multiplication in python by hand for sigma = 1, filter_shape = (3,3)
-expected_output_2 = preprocess_image("test_image/test.png")
+# we can then calculate the expected output image by matrix multiplication in python by hand for sigma = 1, filter_shape=(3,3)
+expected_output_1 = preprocess_image("test_image/test.png.png")
 
 
 # test normal picture with RBG channel
 def test_normal_pic_rbg(self):
-    assert np.arrat_equal(gaussian_blur("test_py/test_image/milad_cropped.png", "test_py/test_image/gb_output.png", sigma = 1), expectied_output_1), "GaussianBlur not working on RBG image"
+    assert np.arrat_equal(gaussian_blur("test_py/test_image/carnovsky_RGB_1.png", "test_py/test_image/test.png", sigma = 1, filter_shape = (3,3)), expectied_output_1), "GaussianBlur not working on RBG image"
 
 
 # test non-image input
 def test_wrong_input_type():
     with pytest.raises(AttributeError):
-        gaussian_blur("This is not an image","test_py/test_image/gb_output.png", sigma = 1)
+        gaussian_blur("This is not an image","test_py/test_image/test.png", sigma = 1, filter_shape = (3,3))
 
 # test missing input arguments
 def test_input_path_not_exist():
     with pytest.raises(FileNotFoundError):
-        laplacian_filter("./1234/123.png", "test_py/test_image/gb_output.png", sigma = 1)
+        laplacian_filter("./1234/123.png", "test_py/test_image/test.png", sigma = 1, filter_shape = (3,3))
