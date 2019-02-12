@@ -16,7 +16,7 @@ def gaussian_blur(input_image_path, output_image_path, filter_shape = (3,3), sig
 
     '''
     This is the function we use to create a gaussian filter and perform the gaussian blurring on any RGB images
-    we can use this function to constomize the size/shape, and sigma value for the filter when we do blurring
+    we can use this function to customize the size/shape, and sigma value for the filter when we do blurring
 
     Input:
     -----------------------------------------------
@@ -97,7 +97,7 @@ def gaussian_blur(input_image_path, output_image_path, filter_shape = (3,3), sig
 
     # convert the np.array to image and save the image
     img = Image.fromarray(output_image, 'RGB')
-    img.save(output_image_path, 'RGB')
+    img.save(output_image_path)
 
 
 
