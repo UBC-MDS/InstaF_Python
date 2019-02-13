@@ -3,7 +3,7 @@
 import numpy as np
 import skimage.io
 
-def RGB_manipulation(input_path, output_path, R = 1.5, G = 1.5, B = 1.5):
+def RGB_manipulation(input_path, output_path, R = 2, G = 2, B = 2):
     '''
     Manipulates the RGB intensity of an image
 
@@ -11,9 +11,9 @@ def RGB_manipulation(input_path, output_path, R = 1.5, G = 1.5, B = 1.5):
     ------
     input_path: string, path for an image file in .png format
     output_path: string, path for the output image in .png format
-    R: int, the weight to adjust intensity for red channel, all with default 1.5
-    G: int, the weight to adjust intensity for green channel, all with default 1.5
-    B: int, the weight to adjust intensity for blue channel, all with default 1.5
+    R: int, the weight to adjust intensity for red channel, all with default 2
+    G: int, the weight to adjust intensity for green channel, all with default 2
+    B: int, the weight to adjust intensity for blue channel, all with default 2
 
     Returns
     -------

@@ -26,7 +26,7 @@ test_img_RGB_ex_output = np.array([[[ 12,  36,  84],[ 24,  72,  21],[ 48,  18,  
 
 # Check whether RGB_manipulation function is working properly
 def test_RGB():
-    RGB_manipulation("InstaF_Python/test/test_image/test_img_RBG_input.png", "test/test_image/test_img_RBG_output.png", R = 1, G = 2, B = 3)
+    RGB_manipulation("InstaF_Python/test/test_image/test_img_RBG_input.png", "InstaF_Python/test/test_image/test_img_RBG_output.png", R = 1, G = 2, B = 3)
     output = skimage.io.imread("InstaF_Python/test/test_image/test_img_RBG_output.png")[:,:,:3]
     assert np.array_equal(output, test_img_RGB_ex_output), "RGB_manipulation not working"
 
