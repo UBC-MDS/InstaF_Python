@@ -96,6 +96,7 @@ Example:
 ```laplacian_filter("test_py/test_image/test_img_laplacian_input.png", "test_py/test_image/laplacian_output.png")```
 
 #### Package dependencies
+|||
 |---|---|
 |numpy|             pandas|
 |pytest|            os|
