@@ -1,0 +1,5 @@
+[
+  "InstaF_Python/test/test_RGB_manipulation.py::test_RGB",
+  "InstaF_Python/test/test_RGB_manipulation.py::test_wrong_input_type",
+  "InstaF_Python/test/test_RGB_manipulation.py::test_wrong_output_type"
+]
