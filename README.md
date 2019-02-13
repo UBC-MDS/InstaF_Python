@@ -47,7 +47,7 @@ InstaF_Python
 
 Installing InstaF_Python is easy with only the following two steps:
 
-1. Open the Terminal
+1. Open your Terminal
 2. Enter the following command: pip install git+https://github.com/UBC-MDS/InstaF_Python.git
 
 #### Usage
@@ -96,8 +96,6 @@ Example:
 ```laplacian_filter("test_py/test_image/test_img_laplacian_input.png", "test_py/test_image/laplacian_output.png")```
 
 #### Package dependencies
-
-|||
 |---|---|
 |numpy|             pandas|
 |pytest|            os|
