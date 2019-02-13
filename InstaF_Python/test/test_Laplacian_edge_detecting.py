@@ -16,9 +16,9 @@ skimage.io.imsave("test_py/test_image/test_img_laplacian_input.png", test_img_la
 # test output: Image with the Laplacian filter applied on it
 # filter is [[0,-1,	0],[-1,4,-1],[0,-1,	0]] and boundary is symm
 
-test_img_laplacian_ex_output = np.array([[[0, 155, 0],[255, 0, 105],[0, 153, 0]],
-                                         [[0, 0, 60], [0, 255, 0], [255, 0, 16]],
-                                         [[8, 0, 95], [12, 255, 183], [26, 0, 0]]], dtype="uint8")
+test_img_laplacian_ex_output = np.array([[[  0,  31,   0], [255,   0, 132], [  0,  89,   0]],
+                                         [[  0,   0,  29], [  0, 197,   0], [255,   0,  18]],
+                                         [[  4,   0,  47], [132, 255, 255], [  0,   0,   0]]], dtype="uint8")
 
 skimage.io.imsave("test_py/test_image/test_img_laplacian_exp_output.png", test_img_laplacian_ex_output)
 
