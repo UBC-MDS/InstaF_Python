@@ -6,6 +6,7 @@
 import numpy as np
 import pytest
 import skimage.io
+from InstaF_Python import laplacian_filter
 
 # test input: colour image
 test_img_laplacian_input = np.array([[[12, 79, 15],[171, 55, 63],[48, 90, 14]],
