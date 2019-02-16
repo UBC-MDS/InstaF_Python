@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import skimage
 
 def laplacian_edge_detecting(input_image,  output_image):
     '''
@@ -17,7 +18,7 @@ def laplacian_edge_detecting(input_image,  output_image):
 
     '''
     # Reading the image matrix
-    image = plt.imread(input_image)
+    image = skimage.io.imread(input_image)
     
     for k in range(3):
 
@@ -47,7 +48,7 @@ def laplacian_edge_detecting(input_image,  output_image):
         image[:,:,k] = result
     
     # Saving the image at output_path
-    plt.imsave(output_image, image)
+    skimage.io.imsave(output_image, image)
 
 
     
