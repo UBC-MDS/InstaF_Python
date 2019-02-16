@@ -40,24 +40,25 @@ InstaF_Python
     * laplacian_edge_detecting.py 
     * RGB_manipulation.py 
     * \__init__.py
-  * Testing Units Design: [test](test)
-    * Contains images for testing: [test_image](test/test_image/)
-    * testing units for Gaussian Blurring: [test_Gaussian_blurring.py](test/test_gaussian_blurring.py)
-    * testing units for Laplacian edge: [test_Laplacian_edge_detecting.py](test/test_Laplacian_edge_detecting.py)
-    * testing units for RGB channel: [test_RGB_Manipulation.py](test/test_RGB_Manipulation.py)
+  * Testing Units Design: [test](InstaF_Python/test)
+    * Contains images for testing: [test_image](InstaF_Python/test/test_image/)
+    * testing units for Gaussian Blurring: [test_Gaussian_blurring.py](InstaF_Python/test/test_Gaussian_blurring.py)
+    * testing units for Laplacian edge: [test_Laplacian_edge_detecting.py](InstaF_Python/test/test_Laplacian_edge_detecting.py)
+    * testing units for RGB channel: [test_RGB_Manipulation.py](InstaF_Python/test/test_RGB_manipulation.py)
 
 ## Installation
 
 Installing InstaF_Python is easy with only the following two steps:
 
 1. Open your Terminal
-2. Enter the following command: pip install git+https://github.com/UBC-MDS/InstaF_Python.git
+2. Enter the following command: pip install git+https://github.com/UBC-MDS/InstaF_Python
 
 ## Usage
 
 ```import InstaF_Python```
 
-1.```gaussian_blur(input_image_path, output_image_path, filter_shape = (3,3), sigma = 1)```
+#### 1. Gaussian Blur
+```gaussian_blur(input_image_path, output_image_path, filter_shape = (3,3), sigma = 1)```
 
 Arguments:
 
@@ -72,13 +73,14 @@ Example:
 
 Before:
 
-![gb_before](https://github.com/UBC-MDS/InstaF_Python/blob/master/InstaF_Python/test/test_image/carnovsky_RGB_1.png)
+<img src="InstaF_Python/test/test_image/carnovsky_RGB_1.png" border = "5" width="400" height="300"/>
 
 After:
 
-![gb_after](https://github.com/UBC-MDS/InstaF_Python/blob/master/InstaF_Python/test/test_image/test.png)
+<img src="InstaF_Python/test/test_image/test.png" border = "5" width="400" height="300"/>
 
-2.```RGB_manipulation(input_path, output_path, R = 1.5, G = 1.5, B = 1.5)```
+#### 2. RGB manipulation
+```RGB_manipulation(input_path, output_path, R = 1.5, G = 1.5, B = 1.5)```
 
 Arguments:
 
@@ -90,6 +92,15 @@ Arguments:
 
 Example:
 ```RGB_manipulation("InstaF_Python/test/test_image/test_img_RBG_input.png", "test/test_image/test_img_RBG_output.png", R = 1, G = 2, B = 3)```
+
+Before:
+
+<img src="InstaF_Python/test/test_image/carnovsky_RGB_1.png" border = "5" width="400" height="300"/>
+
+After:
+
+<img src="InstaF_Python/test/test_image/Carnovsky_RGB_manipulated.png" border = "5" width="400" height="300"/>
+
 
 3.```laplacian_edge_detecting(input_image,  output_image)```
 
