@@ -2,6 +2,7 @@
 
 import numpy as np
 import skimage.io
+import pytest
 
 def RGB_manipulation(input_path, output_path, R = 2, G = 2, B = 2):
     '''

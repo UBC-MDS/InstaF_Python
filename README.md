@@ -34,6 +34,7 @@ InstaF_Python
   * required file: [Code_of_CONDUCT.md](Code_of_CONDUCT.md)
   * README.md
   * InstaF_Python: folder contains all the Functions
+
     * gaussian_blur.py 
     * laplacian_edge_detecting.py 
     * RGB_manipulation.py 
@@ -64,6 +65,7 @@ Arguments:
 * ```sigma```: Standard diviation of the gaussian distribution (higher sigma size allows stronger blurring)
 
 Example:
+
 ```gaussian_blur("test/test_image/carnovsky_RGB_1.png", "test_py/test_image/test.png", filter_shape = (3,3), sigma = 1)```
 
 Before:
@@ -95,6 +97,7 @@ Arguments:
 * ```output_path```: Path to the output image
 
 Example:
+
 ```laplacian_filter("test/test_image/test_img_laplacian_input.png", "test_py/test_image/laplacian_output.png")```
 
 #### Package dependencies
@@ -105,7 +108,6 @@ Example:
 |skimage.io|        skimage.color|
 |skimage.transform|
 
-
 #### Package function testing
 
 Test the function of RGB_manipulation: pytest InstaF_Python/test/test_RGB_Manipulation.py
@@ -113,3 +115,4 @@ Test the function of RGB_manipulation: pytest InstaF_Python/test/test_RGB_Manipu
 Test the function of gaussian_blur: pytest InstaF_Python/test/test_Gaussian_blurring.py
 
 Test the function of laplacian_edge_detecting: pytest InstaF_Python/test/test_Laplacian_edge_detecting.py
+
