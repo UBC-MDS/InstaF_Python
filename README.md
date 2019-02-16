@@ -79,11 +79,11 @@ Example:
 
 Before:
 
-<img src="InstaF_Python/test/test_image/carnovsky_RGB_1.png" border = "5" width="400" height="275"/>
+<img src="InstaF_Python/test/test_image/carnovsky_RGB_1.png" border = "5" width="350" height="157"/>
 
 After:
 
-<img src="InstaF_Python/test/test_image/test.png" border = "5" width="400" height="275"/>
+<img src="InstaF_Python/test/test_image/test.png" border = "5" width="350" height="157"/>
 
 #### 2. RGB manipulation
 ```RGB_manipulation(input_path, output_path, R = 2, G = 2, B = 2)```
@@ -101,11 +101,11 @@ Example:
 
 Before:
 
-<img src="InstaF_Python/test/test_image/carnovsky_RGB_1.png" border = "5" width="400" height="275"/>
+<img src="InstaF_Python/test/test_image/carnovsky_RGB_1.png" border = "5" width="350" height="157"/>
 
 After:
 
-<img src="InstaF_Python/test/test_image/Carnovsky_RGB_manipulated.png" border = "5" width="400" height="275"/>
+<img src="InstaF_Python/test/test_image/Carnovsky_RGB_manipulated.png" border = "5" width="350" height="157"/>
 
 
 #### 3. Laplacian Edge Detecting
