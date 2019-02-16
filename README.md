@@ -29,7 +29,7 @@ Image processing uses computer algorithms to enhance an image or to extract usef
 
 ## Repo structure:
 
-InstaF_Python
+#### InstaF_Python
   * [CONTRIBUTING.md](CONTRIBUTING.md)
   * [Code_of_CONDUCT.md](Code_of_CONDUCT.md)
   * [LICENSE.txt](LICENSE.txt)
@@ -42,9 +42,9 @@ InstaF_Python
     * \__init__.py
   * Testing Units Design: [test](InstaF_Python/test)
     * Contains images for testing: [test_image](InstaF_Python/test/test_image/)
-    * testing units for Gaussian Blurring: [test_Gaussian_blurring.py](InstaF_Python/test/test_Gaussian_blurring.py)
-    * testing units for Laplacian edge: [test_Laplacian_edge_detecting.py](InstaF_Python/test/test_Laplacian_edge_detecting.py)
-    * testing units for RGB channel: [test_RGB_Manipulation.py](InstaF_Python/test/test_RGB_manipulation.py)
+    * Testing units for Gaussian Blurring: [test_Gaussian_blurring.py](InstaF_Python/test/test_Gaussian_blurring.py)
+    * Testing units for Laplacian edge: [test_Laplacian_edge_detecting.py](InstaF_Python/test/test_Laplacian_edge_detecting.py)
+    * Testing units for RGB channel: [test_RGB_Manipulation.py](InstaF_Python/test/test_RGB_manipulation.py)
 
 ## Installation
 
@@ -55,7 +55,11 @@ Installing InstaF_Python is easy with only the following two steps:
 
 ## Usage
 
-```import InstaF_Python```
+```from InstaF_Python.gaussian_blur import gaussian_blur```
+
+```from InstaF_Python.RGB_manipulation import RGB_manipulation```
+
+```from InstaF_Python.laplacian_edge_detecting import laplacian_edge_detecting```
 
 #### 1. Gaussian Blur
 ```gaussian_blur(input_image_path, output_image_path, filter_shape = (3,3), sigma = 1)```
@@ -73,25 +77,25 @@ Example:
 
 Before:
 
-<img src="InstaF_Python/test/test_image/carnovsky_RGB_1.png" border = "5" width="400" height="300"/>
+<img src="InstaF_Python/test/test_image/carnovsky_RGB_1.png" border = "5" width="475" height="300"/>
 
 After:
 
-<img src="InstaF_Python/test/test_image/test.png" border = "5" width="400" height="300"/>
+<img src="InstaF_Python/test/test_image/test.png" border = "5" width="475" height="300"/>
 
 #### 2. RGB manipulation
-```RGB_manipulation(input_path, output_path, R = 1.5, G = 1.5, B = 1.5)```
+```RGB_manipulation(input_path, output_path, R = 2, G = 2, B = 2)```
 
 Arguments:
 
 * ```input_path```: Path to the input image
 * ```output_path```: Path to the output image
-* ```R```: Adjusting intensity for red channel (integer, default: 2)
-* ```B```: Adjusting intensity for blue channel (integer, default: 2)
-* ```G```: Adjusting intensity for green channel (integer, default: 2)
+* ```R```: Adjusting intensity for red channel (integer)
+* ```B```: Adjusting intensity for blue channel (integer)
+* ```G```: Adjusting intensity for green channel (integer)
 
 Example:
-```RGB_manipulation("InstaF_Python/test/test_image/test_img_RBG_input.png", "test/test_image/test_img_RBG_output.png", R = 1, G = 2, B = 3)```
+```RGB_manipulation("test/test_image/carnovsky_RGB_1.png", "test/test_image/Carnovsky_RGB_manipulated.png", R = 1, G = 1, B = 5)```
 
 Before:
 
@@ -102,7 +106,8 @@ After:
 <img src="InstaF_Python/test/test_image/Carnovsky_RGB_manipulated.png" border = "5" width="400" height="300"/>
 
 
-3.```laplacian_edge_detecting(input_image,  output_image)```
+#### 3. Laplacian Edge Detecting
+```laplacian_edge_detecting(input_image,  output_image)```
 
 Arguments:
 
@@ -113,19 +118,17 @@ Example:
 
 ```laplacian_filter("test/test_image/test_img_laplacian_input.png", "test_py/test_image/laplacian_output.png")```
 
-#### Package dependencies
-|||
+Before:
+
+<img src="InstaF_Python/test/test_image/carnovsky_RGB_1.png" border = "5" width="400" height="300"/>
+
+After:
+
+<img src="InstaF_Python/test/test_image/Carnovsky_RGB_manipulated.png" border = "5" width="400" height="300"/>
+
+## Package dependencies
 |---|---|
 |numpy|             pandas|
 |pytest|            os|
 |skimage.io|        skimage.color|
 |skimage.transform|
-
-#### Package function testing
-
-Test the function of RGB_manipulation: pytest InstaF_Python/test/test_RGB_Manipulation.py
-
-Test the function of gaussian_blur: pytest InstaF_Python/test/test_Gaussian_blurring.py
-
-Test the function of laplacian_edge_detecting: pytest InstaF_Python/test/test_Laplacian_edge_detecting.py
-
