@@ -6,7 +6,7 @@
 import numpy as np
 import pytest
 from InstaF_Python.laplacian_edge_detecting import laplacian_edge_detecting
-import skimage
+import skimage.io
 
 # test input: colour image
 test_img_laplacian_input = np.array([[[12, 79, 15],[171, 55, 63],[48, 90, 14]],
@@ -46,5 +46,3 @@ def test_input_path_not_exist():
 def test_bad_output():
     with pytest.raises(AttributeError):
         laplacian_edge_detecting("InstaF_Python/test/test_image/test_img_laplacian_input.png", 1234)
-
-
