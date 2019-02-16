@@ -133,5 +133,5 @@ After:
 |---|---|
 |numpy|             pandas|
 |pytest|            os|
-|skimage.io|        skimage.color|
-|skimage.transform|
+|skimage|           skimage.color|
+|skimage.transform| skimage.io|
