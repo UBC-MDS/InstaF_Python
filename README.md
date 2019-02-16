@@ -135,3 +135,4 @@ After:
 |pytest|            os|
 |skimage|           skimage.color|
 |skimage.transform| skimage.io|
+|matplotlib|        matplotlib.pyplot|
