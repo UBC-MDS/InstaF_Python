@@ -10,6 +10,9 @@
 import numpy as np
 import skimage.io
 from PIL import Image
+import matplotlib as plt
+
+
 
 
 def gaussian_blur(input_image_path, output_image_path, filter_shape = (3,3), sigma = 1):
