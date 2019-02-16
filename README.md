@@ -118,15 +118,15 @@ Arguments:
 
 Example:
 
-```laplacian_filter("test/test_image/IMG_2036.png", "test/test_image/IMG_2037.png")```
+```laplacian_filter("test/test_image/IMG_2036.PNG", "test/test_image/IMG_2037.PNG")```
 
 Before:
 
-<img src="InstaF_Python/test/test_image/IMG_2036.png" border = "5" width="199" height="253"/>
+<img src="InstaF_Python/test/test_image/IMG_2036.PNG" border = "5" width="199" height="253"/>
 
 After:
 
-<img src="InstaF_Python/test/test_image/IMG_2037.png" border = "5" width="199" height="253"/>
+<img src="InstaF_Python/test/test_image/IMG_2037.PNG" border = "5" width="199" height="253"/>
 
 ## Package dependencies
 |||
