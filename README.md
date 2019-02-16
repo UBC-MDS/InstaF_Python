@@ -60,17 +60,17 @@ Arguments:
 
 * ```input_image_path```: Path to the input image
 * ```output_image_path```: Path to the output image
-* ```filter_shape```: Size of the filter 
+* ```filter_shape```: Size of the filter
 * ```sigma```: Standard diviation of the gaussian distribution (higher sigma size allows stronger blurring)
 
 Example:
 ```gaussian_blur("test_py/test_image/carnovsky_RGB_1.png", "test_py/test_image/test.png", filter_shape = (3,3), sigma = 1)```
 
 Before:
-![gb_before](https://github.com/UBC-MDS/InstaF_Python/blob/master/test_py/test_image/carnovsky_RGB_1.png)
+![gb_before](https://github.com/UBC-MDS/InstaF_Python/blob/master/InstaF_Python/test/test_image/carnovsky_RGB_1.png)
 
 After:
-![gb_after](https://github.com/UBC-MDS/InstaF_Python/blob/master/test_py/test_image/test.png)
+![gb_after](https://github.com/UBC-MDS/InstaF_Python/blob/master/InstaF_Python/test/test_image/test.png)
 
 2.```RGB_manipulation(input_path, output_path, R = 1.5, G = 1.5, B = 1.5)```
 
@@ -101,6 +101,4 @@ Example:
 |numpy|             pandas|
 |pytest|            os|
 |skimage.io|        skimage.color|
-|skimage.transform| 
-
-
+|skimage.transform|
