@@ -1,5 +1,5 @@
 # InstaF in Python
-<img src="InstaF_Python/test/test_image/logo.png" align="right" border = "5" width="275" height="275"/>
+<img src="InstaF_Python/test/test_image/logo.png" align="right" border = "5" width="275" height="200"/>
 
 ## Contributors:
 
