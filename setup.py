@@ -7,11 +7,4 @@ setup(
     packages=['InstaF_Python',],
     license='LICENSE.md',
     long_description=open('README.md').read(),
-    install_requires=[
-        'numpy',
-        'matplotlib',
-        'skimage',
-        'pytest',
-        'os',
-    ],
 )
