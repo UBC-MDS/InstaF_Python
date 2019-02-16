@@ -1,4 +1,5 @@
-# InstaF in Python Proposal
+# InstaF in Python
+<img src="test/test_image/logo.png" align="right" border = "5" width="275" height="275"/>
 
 ## Contributors:
 
@@ -26,32 +27,33 @@ Image processing uses computer algorithms to enhance an image or to extract usef
 [InstaPy](https://github.com/UBC-MDS/InstaPy) is a Python package that contains the three functions: blur, flip and greyscale to transform images. In this project, we plan to implement three more image processing functions in Python by exploring additional filters.
 
 
-## Repo structure (will keep updating):
-
+## Repo structure:
 
 InstaF_Python
-  * required file: [CONTRIBUTING.md](CONTRIBUTING.md)
-  * required file: [Code_of_CONDUCT.md](Code_of_CONDUCT.md)
+  * [CONTRIBUTING.md](CONTRIBUTING.md)
+  * [Code_of_CONDUCT.md](Code_of_CONDUCT.md)
+  * [LICENSE.txt](LICENSE.txt)
   * README.md
   * InstaF_Python: folder contains all the Functions
 
     * gaussian_blur.py 
     * laplacian_edge_detecting.py 
     * RGB_manipulation.py 
+    * \__init__.py
   * Testing Units Design: [test](test)
     * Contains images for testing: [test_image](test/test_image/)
     * testing units for Gaussian Blurring: [test_Gaussian_blurring.py](test/test_gaussian_blurring.py)
     * testing units for Laplacian edge: [test_Laplacian_edge_detecting.py](test/test_Laplacian_edge_detecting.py)
     * testing units for RGB channel: [test_RGB_Manipulation.py](test/test_RGB_Manipulation.py)
 
-#### Installation
+## Installation
 
 Installing InstaF_Python is easy with only the following two steps:
 
 1. Open your Terminal
 2. Enter the following command: pip install git+https://github.com/UBC-MDS/InstaF_Python.git
 
-#### Usage
+## Usage
 
 ```import InstaF_Python```
 
