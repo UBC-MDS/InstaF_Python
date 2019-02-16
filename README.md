@@ -61,6 +61,8 @@ Installing InstaF_Python is easy with only the following two steps:
 
 ```from InstaF_Python.laplacian_edge_detecting import laplacian_edge_detecting```
 
+## Functions
+
 #### 1. Gaussian Blur
 ```gaussian_blur(input_image_path, output_image_path, filter_shape = (3,3), sigma = 1)```
 
@@ -73,7 +75,7 @@ Arguments:
 
 Example:
 
-```gaussian_blur("test/test_image/carnovsky_RGB_1.png", "test_py/test_image/test.png", filter_shape = (3,3), sigma = 1)```
+```gaussian_blur("test/test_image/carnovsky_RGB_1.png", "test/test_image/test.png", filter_shape = (3,3), sigma = 1)```
 
 Before:
 
@@ -116,17 +118,18 @@ Arguments:
 
 Example:
 
-```laplacian_filter("test/test_image/test_img_laplacian_input.png", "test_py/test_image/laplacian_output.png")```
+```laplacian_filter("test/test_image/IMG_2036.png", "test/test_image/IMG_2037.png")```
 
 Before:
 
-<img src="InstaF_Python/test/test_image/carnovsky_RGB_1.png" border = "5" width="400" height="300"/>
+<img src="InstaF_Python/test/test_image/IMG_2036.png" border = "5" width="199" height="253"/>
 
 After:
 
-<img src="InstaF_Python/test/test_image/Carnovsky_RGB_manipulated.png" border = "5" width="400" height="300"/>
+<img src="InstaF_Python/test/test_image/IMG_2037.png" border = "5" width="199" height="253"/>
 
 ## Package dependencies
+|||
 |---|---|
 |numpy|             pandas|
 |pytest|            os|
