@@ -46,5 +46,3 @@ def test_input_path_not_exist():
 def test_bad_output():
     with pytest.raises(AttributeError):
         laplacian_edge_detecting("InstaF_Python/test/test_image/test_img_laplacian_input.png", 1234)
-
-
