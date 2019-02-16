@@ -3,7 +3,15 @@ from distutils.core import setup
 setup(
     name='InstaF_Python',
     version='0.1',
+    url = 'https://github.com/UBC-MDS/InstaF_Python',
     packages=['InstaF_Python',],
-    license='MIT',
-    long_description=open('README.txt').read(),
+    license='LICENSE.md',
+    long_description=open('README.md').read(),
+    install_requires=[
+        'numpy',
+        'matplotlib',
+        'skimage',
+        'pytest',
+        'os',
+    ],
 )
