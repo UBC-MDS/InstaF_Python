@@ -1,0 +1,5 @@
+[
+  "InstaF_Python/test/test_Gaussian_blurring.py::test_normal_pic",
+  "InstaF_Python/test/test_Gaussian_blurring.py::test_wrong_input_type",
+  "InstaF_Python/test/test_Gaussian_blurring.py::test_input_path_not_exist"
+]

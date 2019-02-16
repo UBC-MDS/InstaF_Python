@@ -26,11 +26,11 @@ test_img_RGB_ex_output = np.array([[[ 12,  36,  84],[ 24,  72,  21],[ 48,  18,  
 
 # Check whether RGB_manipulation function is working properly
 def test_RGB():
-    RGB_manipulation("InstaF_Python/test/test_image/test_img_RBG_input.png", "test/test_image/test_img_RBG_output.png", R = 1, G = 2, B = 3)
+    RGB_manipulation("InstaF_Python/test/test_image/test_img_RBG_input.png", "InstaF_Python/test/test_image/test_img_RBG_output.png", R = 1, G = 2, B = 3)
     output = skimage.io.imread("InstaF_Python/test/test_image/test_img_RBG_output.png")[:,:,:3]
     assert np.array_equal(output, test_img_RGB_ex_output), "RGB_manipulation not working"
 
-# Check edge cases
+# exception handling tests
 ## Wrong input type
 def test_wrong_input_type():
     with pytest.raises(AttributeError):
@@ -40,3 +40,13 @@ def test_wrong_input_type():
 def test_wrong_output_type():
     with pytest.raises(AttributeError):
         RGB_manipulation("InstaF_Python/test/test_image/test_img_RBG_input.png", 12345, R= 1, G=2, B=3)
+
+## Not .png file input_path
+def test_not_png_input():
+    with pytest.raises(OSError):
+        RGB_manipulation("InstaF_Python/test/test_image/not_image.Rmd", "InstaF_Python/test/test_image/test_img_RBG_output.png", R= 1, G=2, B=3)
+
+## test for valid input input_path
+def test_invalid_input_path():
+    with pytest.raises(FileNotFoundError):
+        RGB_manipulation("No_path.png", "InstaF_Python/test/test_image/test_img_RBG_output.png", R= 1, G=2, B=3)

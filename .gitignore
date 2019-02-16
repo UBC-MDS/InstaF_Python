@@ -1,0 +1,3 @@
+# ignore output of pytest
+**/__pycache__
+**/.pytest_cache/v/cache
