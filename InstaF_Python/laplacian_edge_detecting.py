@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import skimage
+import skimage.io
 
 def laplacian_edge_detecting(input_image,  output_image):
     '''
