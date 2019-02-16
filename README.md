@@ -34,14 +34,15 @@ InstaF_Python
   * required file: [Code_of_CONDUCT.md](Code_of_CONDUCT.md)
   * README.md
   * InstaF_Python: folder contains all the Functions
-    * gaussian_blur.py (empty, with doc string)
-    * laplacian_edge_detecting.py (empty, with doc string)
-    * RGB_manipulation.py (empty, with doc string)
-  * Testing Units Design: [test_py](test_py)
-    * Contains images for testing: [test_image](test_py/test_image)
-    * testing units for Gaussian Blurring: [test_Gaussian_blurring.py](test_py/test_Gaussian_blurring.py)
-    * testing units for Laplacian edge: [test_Laplacian_edge_detecting.py](test_py/test_Laplacian_edge_detecting.py)
-    * testing units for RGB channel: [test_RGB_Manipulation.py](test_py/test_RGB_Manipulation.py)
+
+    * gaussian_blur.py 
+    * laplacian_edge_detecting.py 
+    * RGB_manipulation.py 
+  * Testing Units Design: [test](test)
+    * Contains images for testing: [test_image](test/test_image/)
+    * testing units for Gaussian Blurring: [test_Gaussian_blurring.py](test/test_gaussian_blurring.py)
+    * testing units for Laplacian edge: [test_Laplacian_edge_detecting.py](test/test_Laplacian_edge_detecting.py)
+    * testing units for RGB channel: [test_RGB_Manipulation.py](test/test_RGB_Manipulation.py)
 
 #### Installation
 
@@ -64,12 +65,15 @@ Arguments:
 * ```sigma```: Standard diviation of the gaussian distribution (higher sigma size allows stronger blurring)
 
 Example:
-```gaussian_blur("test_py/test_image/carnovsky_RGB_1.png", "test_py/test_image/test.png", filter_shape = (3,3), sigma = 1)```
+
+```gaussian_blur("test/test_image/carnovsky_RGB_1.png", "test_py/test_image/test.png", filter_shape = (3,3), sigma = 1)```
 
 Before:
+
 ![gb_before](https://github.com/UBC-MDS/InstaF_Python/blob/master/InstaF_Python/test/test_image/carnovsky_RGB_1.png)
 
 After:
+
 ![gb_after](https://github.com/UBC-MDS/InstaF_Python/blob/master/InstaF_Python/test/test_image/test.png)
 
 2.```RGB_manipulation(input_path, output_path, R = 1.5, G = 1.5, B = 1.5)```
@@ -93,7 +97,8 @@ Arguments:
 * ```output_path```: Path to the output image
 
 Example:
-```laplacian_filter("test_py/test_image/test_img_laplacian_input.png", "test_py/test_image/laplacian_output.png")```
+
+```laplacian_filter("test/test_image/test_img_laplacian_input.png", "test_py/test_image/laplacian_output.png")```
 
 #### Package dependencies
 |||
@@ -102,3 +107,12 @@ Example:
 |pytest|            os|
 |skimage.io|        skimage.color|
 |skimage.transform|
+
+#### Package function testing
+
+Test the function of RGB_manipulation: pytest InstaF_Python/test/test_RGB_Manipulation.py
+
+Test the function of gaussian_blur: pytest InstaF_Python/test/test_Gaussian_blurring.py
+
+Test the function of laplacian_edge_detecting: pytest InstaF_Python/test/test_Laplacian_edge_detecting.py
+
