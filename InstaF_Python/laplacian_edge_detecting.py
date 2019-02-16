@@ -1,5 +1,6 @@
 import numpy as np
-import skimage.io
+import matplotlib.pyplot as plt
+import skimage
 
 def laplacian_edge_detecting(input_image,  output_image):
     '''
@@ -16,6 +17,7 @@ def laplacian_edge_detecting(input_image,  output_image):
     
 
     '''
+
     # Handling the exceptions
     try:
         # Reading the image matrix
@@ -33,8 +35,6 @@ def laplacian_edge_detecting(input_image,  output_image):
         print("Unknown error for input!")
         print(e)
         raise
-    
-    
     
     for k in range(3):
 

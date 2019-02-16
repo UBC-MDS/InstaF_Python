@@ -20,6 +20,7 @@ from InstaF_Python.gaussian_blur import gaussian_blur
 # to test the output is now defined as a matrix, just to make the testing easier, in the future, the output will be converted to a image
 
 # first we define a function to process the image
+
 output = gaussian_blur("InstaF_Python/test/test_image/carnovsky_RGB_1.png", "../test/test_image/output.png", sigma = 1, filter_shape = (3,3))
 exp_output = skimage.io.imread("InstaF_Python/test/test_image/test.png")
 
