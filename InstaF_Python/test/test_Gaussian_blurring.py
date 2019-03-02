@@ -21,6 +21,7 @@ from InstaF_Python.gaussian_blur import gaussian_blur
 
 # first we define a function to process the image
 output = gaussian_blur("InstaF_Python/test/test_image/carnovsky_RGB_1.png", "InstaF_Python/test/test_image/output.png", sigma = 1, filter_shape = (3,3))
+
 exp_output = skimage.io.imread("InstaF_Python/test/test_image/test.png")
 
 # the first part we want to test if our function is able to convert regular RBG channel image

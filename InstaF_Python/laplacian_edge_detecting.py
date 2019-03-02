@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import skimage.io
+import skimage
 
 def laplacian_edge_detecting(input_image,  output_image):
     '''
@@ -17,8 +17,24 @@ def laplacian_edge_detecting(input_image,  output_image):
     
 
     '''
-    # Reading the image matrix
-    image = skimage.io.imread(input_image)
+
+    # Handling the exceptions
+    try:
+        # Reading the image matrix
+        image = skimage.io.imread(input_image)
+    except AttributeError:
+        print("Not a valid file name or path!")
+        raise
+    except FileNotFoundError:
+        print("FileNotFound!")
+        raise
+    except OSError:
+        print("Input file shoud be an image!")
+        raise
+    except Exception as e:
+        print("Unknown error for input!")
+        print(e)
+        raise
     
     for k in range(3):
 
