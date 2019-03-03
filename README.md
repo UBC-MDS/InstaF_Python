@@ -137,12 +137,6 @@ After:
 |skimage.transform| skimage.io|
 |matplotlib|        matplotlib.pyplot|
 
-## Test Results
+## Branch Coverage Results
 
-#### Pytest
-
-<img src= "InstaF_Python/test/test_image/pytest_results.png" width="600" height="450"/>
-
-####Branch Coverage Results
-
-<img src= "InstaF_Python/test/test_image/python_branch_coverage.png" width="600" height="450"/>
+<img src= "/InstaF_Python/test/test_image/python_branch_coverage.png" width="600" height="450"/>
