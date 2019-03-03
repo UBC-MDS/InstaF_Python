@@ -47,13 +47,6 @@ def gaussian_blur(input_image_path, output_image_path, filter_shape = (3,3), sig
     except FileNotFoundError:
         print("Please provide the valid directory path for the input image: FileNotFound")
         raise
-    except OSError:
-        print("Please provide the valid directory path for the input image: input file shoud be image .png")
-        raise
-    except Exception as e:
-        print("Unknown general error for input")
-        print(e)
-        raise
     
     if(filter_shape[0] %2 == 0 | filter_shape[1]%2 == 0):
         print("InputError: the shape of the filter should be odd")
@@ -82,7 +75,7 @@ def gaussian_blur(input_image_path, output_image_path, filter_shape = (3,3), sig
     for i in range(row_gap, len(input_image) - row_gap):
         for j in range(col_gap, len(input_image[i])-col_gap):
             for channel in range(0, len(input_image[i][j])): # we can process both RGB or grayscale
-                
+
                 # define the array around the pixel that we want to perform the gaussian blurring
                 pixel_rec = [] # create an empty list to record the pixel
 
@@ -91,8 +84,8 @@ def gaussian_blur(input_image_path, output_image_path, filter_shape = (3,3), sig
                         pixel_rec.append(input_image[section_row][section_col][channel])
 
                 pixel_array = np.array(pixel_rec).reshape(filter_shape[0], filter_shape[1])
-                
-                
+
+
                 # calculate the value for the new pixel using gaussian filer matrix
                 new_pix_rec = 0
                 for row in range(filter_shape[0]):
