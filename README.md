@@ -139,4 +139,4 @@ After:
 
 ## Branch Coverage Results
 
-<img src= "InstaF_Python/test/test_image/python_branch_coverage.png")
+<img src= "InstaF_Python/test/test_image/python_branch_coverage.png"/>
