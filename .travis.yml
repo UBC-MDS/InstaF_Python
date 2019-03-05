@@ -7,9 +7,7 @@ install:
  - pip install numpy
  - pip install pandas
  - pip install pytest
- - pip install skimage.color
- - pip install skimage.transform
- - pip install skimage.io
+ - pip install scikit-image
  - pip install matplotlib
  - pip install matplotlib.pyplot
 script:
