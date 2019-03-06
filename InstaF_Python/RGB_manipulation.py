@@ -30,12 +30,6 @@ def RGB_manipulation(input_path, output_path, R = 2, G = 2, B = 2):
     except OSError:
         print("The input is not a .png file")
         raise
-    except FileNotFoundError:
-        print("The input path does not exist")
-        raise
-    except Exception as error:
-        paste("Error: ", error)
-        raise
 
     # construct filter based on user input of RGB weights
     filter = np.array([[[R, G, B]]])

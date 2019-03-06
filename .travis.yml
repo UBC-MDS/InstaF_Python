@@ -1,0 +1,15 @@
+language: python
+python:
+ - "3.6"
+install:
+ - pip install git+https://github.com/UBC-MDS/InstaF_Python.git
+ - pip install -U pytest
+ - pip install numpy
+ - pip install pandas
+ - pip install pytest
+ - pip install scikit-image
+ - pip install matplotlib
+ - pip install matplotlib.pyplot
+script:
+- cd tests/
+- pytest
