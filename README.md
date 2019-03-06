@@ -36,9 +36,9 @@ Image processing uses computer algorithms to enhance an image or to extract usef
   * README.md
   * InstaF_Python: folder contains all the Functions
 
-    * gaussian_blur.py 
-    * laplacian_edge_detecting.py 
-    * RGB_manipulation.py 
+    * gaussian_blur.py
+    * laplacian_edge_detecting.py
+    * RGB_manipulation.py
     * \__init__.py
   * Testing Units Design: [test](InstaF_Python/test)
     * Contains images for testing: [test_image](InstaF_Python/test/test_image/)
@@ -136,3 +136,13 @@ After:
 |skimage|           skimage.color|
 |skimage.transform| skimage.io|
 |matplotlib|        matplotlib.pyplot|
+
+## Test Results
+
+### Pytest
+
+<img src= "InstaF_Python/test/test_image/pytest_results.png" width="600" height="225"/>
+
+### Branch Coverage Results
+
+<img src= "InstaF_Python/test/test_image/python_branch_coverage.png" width="600" height="225"/>
