@@ -1,6 +1,6 @@
 # InstaF in Python
 <img src="InstaF_Python/test/test_image/logo.png" align="right" border = "5" width="275" height="200"/>
-
+[![Build Status](https://travis-ci.org/UBC-MDS/InstaF_Python.svg?branch=master)](https://travis-ci.org/UBC-MDS/InstaF_Python)
 ## Contributors:
 
 Betty Zhou     
